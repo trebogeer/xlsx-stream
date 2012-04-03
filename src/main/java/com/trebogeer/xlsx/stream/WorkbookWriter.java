@@ -94,7 +94,7 @@ public class WorkbookWriter {
      <sheet name="Data Definition" sheetId="1" state="visible" r:id="rId2"/>
     */
     public SpreadSheetWriter addNextSheet(String name, boolean isHidden) throws IOException {
-        int index = addSheet(name, false);
+        int index = addSheet(name, isHidden);
         return new SpreadSheetWriter(zos, index);
     }
 
